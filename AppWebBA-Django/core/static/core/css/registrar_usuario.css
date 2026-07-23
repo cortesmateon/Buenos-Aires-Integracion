@@ -1,0 +1,370 @@
+/* Registration Page Styles - Simple Blue Theme */
+.registration-container {
+    min-height: 100vh;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.registration-wrapper {
+    width: 100%;
+}
+
+/* Header Styles */
+.registration-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.registration-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.registration-header p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Form Container */
+.registration-form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+/* Form Styles */
+.registration-form {
+    width: 100%;
+}
+
+.form-fields {
+    margin-bottom: 1.5rem;
+}
+
+/* Django form field styling */
+.registration-form p {
+    margin-bottom: 1.25rem;
+    border: 0px solid blue;
+    margin: 5px;
+}
+
+.registration-form p:last-child {
+    margin-bottom: 0;
+}
+
+.registration-form label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Specific field widths */
+.registration-form input[name="rut"] {
+    width: 180px;
+}
+
+.registration-form input[name="nombres"],
+.registration-form input[name="apellidos"],
+.registration-form input[name="correo"] {
+    width: 310px;
+}
+
+.registration-form input[name="edad"] {
+    width: 60px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="number"],
+.registration-form select,
+.registration-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.3);
+}
+
+/* Radio button styling */
+.registration-form input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+/* Help text styling */
+.helptext {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.25rem;
+    display: block;
+    line-height: 1.4;
+}
+
+/* Submit Button */
+.form-actions {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 10px;
+    border: 0px solid blue;
+}
+
+.btn-submit {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+}
+
+.btn-submit:active {
+    background: #004085;
+}
+
+/* Error Alert */
+.alert-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.alert-content {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.alert-content strong {
+    font-weight: bold;
+}
+
+/* Error styling for form fields */
+.error {
+    color: red;
+}
+
+/* Utility classes */
+.centrar {
+    text-align: center;
+    margin: 10px;
+    border: 0px solid blue;
+}
+
+.borde-bootstrap-row {
+    border: 0px solid blue;
+    margin: 5px;
+}
+
+/* Form Footer */
+.form-footer {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.form-footer p {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.login-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.login-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .registration-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .registration-header h1 {
+        font-size: 2rem;
+    }
+
+    .registration-form-container {
+        padding: 1.5rem;
+    }
+
+    .registration-form label {
+        width: 100%;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .registration-form input[name="rut"],
+    .registration-form input[name="nombres"],
+    .registration-form input[name="apellidos"],
+    .registration-form input[name="correo"],
+    .registration-form input[name="edad"] {
+        width: 100%;
+    }
+
+    /* Styles for client-side validation errors */
+    .validation-error-message {
+        display: block;
+        /* Ensures the message takes its own line */
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 0.85em;
+        color: red;
+    }
+
+    /* Optional: Style for invalid input fields */
+    .form-fields input.is-invalid {
+        border-color: red;
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    }
+
+    /* Ensure Django's default errors (if any) are also visible */
+    ul.errorlist {
+        color: red;
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 5px;
+        font-size: 0.85em;
+    }
+
+    /* In core/css/registrar_usuario.css */
+
+    /* --- General Error Styles --- */
+    .errorlist {
+        color: red;
+        list-style-type: none;
+        /* Remove bullet points for Django's ul.errorlist */
+        padding-left: 0;
+        margin-top: 5px;
+        font-size: 0.85em;
+        font-weight: bold;
+    }
+
+    /* Specific style for field-level errors generated by Django (server-side) */
+    .field-error-message {
+        display: block;
+        /* Make it take its own line */
+        color: red;
+        font-size: 0.85em;
+        margin-top: 5px;
+    }
+
+    /* New: Style for client-side validation errors generated by JS */
+    .client-validation-error-message {
+        display: block;
+        color: darkorange;
+        /* Use a different color to distinguish client-side from server-side */
+        font-size: 0.85em;
+        margin-top: 5px;
+    }
+
+
+    /* Alert style for general messages (like your 'mesg' variable or non_field_errors) */
+    .alert-error {
+        background-color: #fdd;
+        /* Light red background */
+        border: 1px solid #f00;
+        /* Red border */
+        color: #a00;
+        /* Darker red text */
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .alert-error .alert-content {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style for invalid input fields */
+    input.is-invalid,
+    select.is-invalid {
+        /* Add select for tipousu */
+        border-color: red;
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    }
+
+    /* --- Layout Adjustments for Form Fields --- */
+    .form-fields p {
+        margin-bottom: 15px;
+        position: relative;
+        /* Needed for positioning toggle button absolutely within the p */
+        display: flex;
+        flex-direction: column;
+        /* Stack label, input, errors vertically */
+    }
+
+    .form-fields p label {
+        margin-bottom: 5px;
+    }
+
+    .form-fields p input,
+    .form-fields p select {
+        /* Apply full width to select too */
+        width: 100%;
+    }
+
+    /* --- Password Toggle Styling --- */
+    .password-toggle {
+        position: absolute;
+        right: 10px;
+        /* Adjust as needed */
+        top: calc(50% + 10px);
+        /* Adjust based on your input/label height */
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #888;
+        font-size: 0.9em;
+    }
+
+    /* --- Responsive Adjustments if needed --- */
+    /* @media (max-width: 768px) {
+    .registration-wrapper {
+        padding: 15px;
+    }
+} */
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="542f798c-f325-4547-91a3-41b8b52a80e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51952/WsAutenticacion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsAutenticacion.xsd" MetadataType="Schema" ID="942ca46e-46a3-4224-9d25-ea84304cd9c1" SourceId="1" SourceUrl="http://localhost:51952/WsAutenticacion.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsAutenticacion1.xsd" MetadataType="Schema" ID="a03e1cb4-7946-4756-9710-6afcf2faccf8" SourceId="1" SourceUrl="http://localhost:51952/WsAutenticacion.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsAutenticacion.disco" MetadataType="Disco" ID="b6907b31-94e5-407a-a52a-369bd9a4f596" SourceId="1" SourceUrl="http://localhost:51952/WsAutenticacion.svc?disco" />
+    <MetadataFile FileName="WsAutenticacion2.xsd" MetadataType="Schema" ID="b18183d7-075f-4796-8c67-90aef32ff1e7" SourceId="1" SourceUrl="http://localhost:51952/WsAutenticacion.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsAutenticacion.wsdl" MetadataType="Wsdl" ID="87c22aa7-6f9b-4b66-acff-5c1fb2ab68be" SourceId="1" SourceUrl="http://localhost:51952/WsAutenticacion.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,54 @@
+/* core/css/forms.css */
+.btnwidth {
+    min-width: 120px;
+    /* Ejemplo de ancho mínimo para botones */
+}
+
+.boton_chico {
+    /* Estilos para botones pequeños si son diferentes de btn-sm */
+}
+
+.mini_auto {
+    max-width: 80px;
+    /* Tamaño máximo para las miniaturas de imagen */
+    height: auto;
+    display: block;
+    /* Para centrar si es necesario, o para controlar el flujo */
+}
+
+.titulo_boton {
+    /* Estilos específicos para el encabezado de la columna de botones */
+    text-align: center;
+    /* Por ejemplo, centrar el texto */
+}
+
+/* También podrías querer ajustar los estilos de form.as_ul */
+form ul {
+    list-style: none;
+    /* Quitar viñetas de lista */
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    margin-bottom: 1rem;
+    /* Espacio entre campos */
+}
+
+/* Si los campos no toman form-control automáticamente */
+/*
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+*/

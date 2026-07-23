@@ -1,0 +1,133 @@
+/* core/css/perfil_usuario.css */
+
+/* Styles for the main heading on the page */
+h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: blue !important;
+    /* Forces the heading color to blue */
+}
+
+/* Styles for form labels */
+label {
+    width: 190px;
+    /* Fixed width for labels */
+    display: inline-block;
+    /* Ensures labels take up their specified width */
+    text-align: right;
+    /* Aligns label text to the right */
+    padding-right: 10px;
+    /* Adds some space between label and input */
+}
+
+/* Styles for form input fields */
+input {
+    width: 300px;
+    /* Fixed width for input fields */
+    padding: 8px 12px;
+    /* Adds internal padding */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 4px;
+    /* Slightly rounded corners */
+    margin-bottom: 10px;
+    /* Space below each input */
+}
+
+/* Styles specifically for textarea (like 'dirusu' if you used a widget for it) */
+textarea {
+    width: 300px;
+    /* Fixed width for textarea */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    /* Aligns with the top of its label */
+}
+
+/* Styles for select dropdowns (like 'tipousu') */
+select {
+    width: 300px;
+    /* Fixed width for select dropdown */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the form container */
+form {
+    text-align: left;
+    /* Aligns form content to the left */
+    margin: auto;
+    /* Centers the form horizontally */
+    border: 1px solid blue;
+    /* Blue border around the form */
+    padding: 20px;
+    /* Padding inside the form */
+    max-width: 600px;
+    /* Optional: Sets a maximum width for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    border-radius: 8px;
+    /* Rounded corners for the form box */
+}
+
+/* Styles for help text (e.g., from Django forms) */
+.helptext {
+    float: left;
+    /* Floats help text to the left */
+    font-size: 0.9em;
+    /* Smaller font size */
+    color: #666;
+    /* Gray color for help text */
+    margin-left: 190px;
+    /* Aligns help text below the input field (adjust as needed) */
+    clear: both;
+    /* Ensures it's below the label/input pair */
+    margin-bottom: 10px;
+    /* Space below help text */
+}
+
+/* Styles for the button container */
+.btn_guardar {
+    margin-top: 40px;
+    /* Space above the button */
+    text-align: center !important;
+    /* Centers the button */
+}
+
+/* Styles for the form message (success/error) */
+#form_message {
+    margin-top: 20px;
+    /* Space above the message */
+    padding: 10px 15px;
+    /* Padding inside the message box */
+    border-radius: 5px;
+    /* Rounded corners for the message box */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    text-align: center;
+    /* Center the message text */
+}
+
+/* Specific style for error messages (alert-danger from Bootstrap) */
+.alert-danger {
+    color: #721c24;
+    /* Dark red text */
+    background-color: #f8d7da;
+    /* Light red background */
+    border-color: #f5c6cb;
+    /* Red border */
+}
+
+/* Specific style for success messages (alert-success from Bootstrap) */
+.alert-success {
+    color: #155724;
+    /* Dark green text */
+    background-color: #d4edda;
+    /* Light green background */
+    border-color: #c3e6cb;
+    /* Green border */
+}

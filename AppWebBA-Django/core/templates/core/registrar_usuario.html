@@ -1,0 +1,77 @@
+{# core/registrar_usuario.html #}
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+    <link href="{% static 'core/css/registrar_usuario.css'%}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="registration-container">
+        <div class="bg-decoration bg-decoration-1"></div>
+        <div class="bg-decoration bg-decoration-2"></div>
+
+        <div class="container">
+            <div class="registration-wrapper">
+                <div class="registration-header">
+                    <h1>Registrar Usuario</h1>
+                    <p>Crea tu cuenta para comenzar</p>
+                </div>
+
+                <div class="registration-form-container">
+                    <form method="POST" class="registration-form">
+                        {% csrf_token %}
+
+                        {% if form.non_field_errors %}
+                            <div class="alert-error" role="alert">
+                                <div class="alert-content">
+                                    <strong>Error:</strong>
+                                    <ul>
+                                        {% for error in form.non_field_errors %}
+                                            <li>{{ error }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        <div class="form-fields">
+                            {% for field in form %}
+                                <p>
+                                    {{ field.label_tag }}
+                                    {{ field }}
+                                    {% if field.help_text %}
+                                        <small class="form-text text-muted">{{ field.help_text }}</small>
+                                    {% endif %}
+                                    {% for error in field.errors %}
+                                        <span class="errorlist field-error-message">{{ error }}</span>
+                                    {% endfor %}
+                                </p>
+                            {% endfor %}
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn-submit" type="submit">
+                                Guardar
+                            </button>
+                        </div>
+
+                        {% if mesg %}
+                            <div class="alert-error" role="alert">
+                                <div class="alert-content">
+                                    <strong>Error:</strong> {{ mesg }}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </form>
+
+                    <div class="form-footer">
+                        <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar sesión</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'core/js/registrar_usuario.js' %}"></script>
+{% endblock content %}

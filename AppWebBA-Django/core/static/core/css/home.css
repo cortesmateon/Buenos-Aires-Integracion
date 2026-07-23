@@ -1,0 +1,144 @@
+.imagen_central {
+    width: 500px;
+}
+
+/* core/static/core/css/home.css */
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-title {
+    color: #007bff !important;
+    /* Blue color for your main title */
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    filter: brightness(60%);
+    /* Darkens the image for text readability */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.custom-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    filter: brightness(110%);
+}
+
+
+.section-title {
+    color: #007bff;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.services-section,
+.benefits-section,
+.cta-section {
+    margin-bottom: 50px;
+}
+
+.service-item,
+.benefit-item {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    /* Space between items on small screens */
+}
+
+.service-item:hover,
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon,
+.benefit-icon {
+    font-size: 3rem;
+    /* Larger icons */
+    color: #28a745;
+    /* Green color for icons (success) */
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.cta-section {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.cta-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,11 @@
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\BuenosAires.Model.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\BuenosAires.Model.pdb
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\EntityFramework.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\EntityFramework.xml
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\obj\Debug\BuenosAires.Model.csproj.AssemblyReference.cache
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\obj\Debug\BuenosAires.Model.csproj.CoreCompileInputs.cache
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\obj\Debug\BuenosAi.DD85F527.Up2Date
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\obj\Debug\BuenosAires.Model.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.Model\obj\Debug\BuenosAires.Model.pdb

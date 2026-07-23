@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8B2BF82-4D66-4A41-9C8E-45EE1243748F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BuenosAires.BodegaBA</RootNamespace>
+    <AssemblyName>BuenosAires.BodegaBA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\WsAnwoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WsAutenticacionReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WsGuiaDespachoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WsProductoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WsStockProductoReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScAnwo.cs" />
+    <Compile Include="ScAutenticacion.cs" />
+    <Compile Include="ScGuiaDespacho.cs" />
+    <Compile Include="ScProducto.cs" />
+    <Compile Include="ScStockProducto.cs" />
+    <Compile Include="VentanaBuscarID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaBuscarID.Designer.cs">
+      <DependentUpon>VentanaBuscarID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaGuiasDespacho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaGuiasDespacho.Designer.cs">
+      <DependentUpon>VentanaGuiasDespacho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaLogin.Designer.cs">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaProducto.Designer.cs">
+      <DependentUpon>VentanaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaReservarAnwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaReservarAnwo.Designer.cs">
+      <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaStockProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaStockProducto.Designer.cs">
+      <DependentUpon>VentanaStockProducto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VentanaBuscarID.resx">
+      <DependentUpon>VentanaBuscarID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaGuiasDespacho.resx">
+      <DependentUpon>VentanaGuiasDespacho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaLogin.resx">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaProducto.resx">
+      <DependentUpon>VentanaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaReservarAnwo.resx">
+      <DependentUpon>VentanaReservarAnwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaStockProducto.resx">
+      <DependentUpon>VentanaStockProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.wsdl" />
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion.wsdl" />
+    <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.wsdl" />
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsProductoReference\WsProducto.wsdl" />
+    <None Include="Connected Services\WsProductoReference\WsProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsProductoReference\WsProducto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsProductoReference\WsProducto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsProductoReference\WsProducto3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.wsdl" />
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BuenosAires.Model.Producto.datasource" />
+    <None Include="Properties\DataSources\BuenosAires.Model.Respuesta.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuenosAires.Model\BuenosAires.Model.csproj">
+      <Project>{5417cf0e-219d-4b01-acb7-83fb1aeb3191}</Project>
+      <Name>BuenosAires.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BuenosAires.ServiceLayer\BuenosAires.ServiceLayer.csproj">
+      <Project>{a1274092-24a2-4798-a061-23b758a98092}</Project>
+      <Name>BuenosAires.ServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WsAnwoReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsAutenticacionReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsGuiaDespachoReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsProductoReference\" />
+    <WCFMetadataStorage Include="Connected Services\WsStockProductoReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAutenticacionReference\WsAutenticacion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAutenticacionReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAutenticacionReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAutenticacionReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsProductoReference\WsProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsProductoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsProductoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsProductoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\WsGuiaDespacho.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsGuiaDespachoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\WsStockProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsStockProductoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\WsAnwo.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WsAnwoReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

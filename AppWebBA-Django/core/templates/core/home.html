@@ -1,0 +1,85 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="{% static 'core/css/home.css'%}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <h1 class="page-title">Bienvenido a Aires Acondicionados Buenos Aires</h1>
+    <p class="lead">Tu solución integral para climatización en la región metropolitana de Santiago.</p>
+
+    <div class="hero-section">
+        <img class="hero-image" src="{% static 'core\static\core\img\home.jpg'%}" alt="Aires Acondicionados">
+        <div class="hero-overlay">
+            <h2>Climatización Profesional y Confiable</h2>
+            <p>Ofrecemos instalación, mantenimiento y reparación de sistemas de aire acondicionado para hogares y
+                empresas.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg custom-btn">Solicita tu Servicio Ahora</a>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <section class="services-section">
+        <h2 class="section-title">Nuestros Servicios Destacados</h2>
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <i class="fas fa-snowflake service-icon"></i>
+                <h3>Instalación Profesional</h3>
+                <p>Equipos nuevos y de alta eficiencia, instalados por técnicos certificados para garantizar el máximo
+                    rendimiento.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <i class="fas fa-wrench service-icon"></i>
+                <h3>Mantenimiento Preventivo</h3>
+                <p>Aseguramos la vida útil de tus equipos y un aire más limpio con nuestro servicio de mantenimiento
+                    periódico.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <i class="fas fa-fire service-icon"></i>
+                <h3>Reparaciones Rápidas</h3>
+                <p>Soluciones eficientes para cualquier problema con tu sistema de climatización, minimizando las
+                    molestias.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section class="benefits-section">
+        <h2 class="section-title">¿Por qué elegirnos?</h2>
+        <div class="row">
+            <div class="col-md-6 benefit-item">
+                <i class="fas fa-check-circle benefit-icon"></i>
+                <p><strong>Experiencia y Garantía:</strong> Años de experiencia en el sector y garantía en todos
+                    nuestros trabajos.</p>
+            </div>
+            <div class="col-md-6 benefit-item">
+                <i class="fas fa-headset benefit-icon"></i>
+                <p><strong>Atención Personalizada:</strong> Nos adaptamos a tus necesidades y te ofrecemos asesoramiento
+                    experto.</p>
+            </div>
+            <div class="col-md-6 benefit-item">
+                <i class="fas fa-dollar-sign benefit-icon"></i>
+                <p><strong>Precios Competitivos:</strong> Calidad de servicio al mejor precio del mercado.</p>
+            </div>
+            <div class="col-md-6 benefit-item">
+                <i class="fas fa-map-marker-alt benefit-icon"></i>
+                <p><strong>Cobertura en Santiago:</strong> Atendemos en toda la Región Metropolitana de Santiago.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section class="cta-section">
+        <h2>¿Listo para disfrutar del confort?</h2>
+        <p>Contáctanos hoy mismo y recibe una cotización sin compromiso.</p>
+        <a href="{% url 'contact' %}" class="btn btn-success btn-lg custom-btn">Agenda tu Visita</a>
+    </section>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\obj\Debug\BuenosAires.BusinessLayer.csproj.AssemblyReference.cache
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\obj\Debug\BuenosAires.BusinessLayer.csproj.CoreCompileInputs.cache
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.BusinessLayer.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.BusinessLayer.pdb
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.DataLayer.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.Model.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\EntityFramework.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.DataLayer.pdb
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.DataLayer.dll.config
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\BuenosAires.Model.pdb
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\EntityFramework.xml
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\obj\Debug\BuenosAi.D8D1B1E4.Up2Date
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\obj\Debug\BuenosAires.BusinessLayer.dll
+E:\BuenosAires\BodegaBA-CSharp\BuenosAires\BuenosAires.BusinessLayer\obj\Debug\BuenosAires.BusinessLayer.pdb
